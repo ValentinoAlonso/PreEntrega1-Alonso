@@ -2,12 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import NavBar from './components/NavBar'; // 
+import ItemListContainer from './components/ItemListContainer';
 
-function App() {
+function app() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <><div>
+      <NavBar />
+      <ItemListContainer greeting="¡Bienvenido a nuestra tienda!" />
+    </div>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -32,18 +38,5 @@ function App() {
   )
 }
 
-export default App
-import React from 'react';
-import NavBar from './components/NavBar'; // 
-import ItemListContainer from './components/ItemListContainer'; 
+export default app()
 
-const App = () => {
-  return (
-    <div>
-      <NavBar />
-      <ItemListContainer greeting="¡Bienvenido a nuestra tienda!" />
-    </div>
-  );
-};
-
-export default App;
