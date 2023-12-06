@@ -14,4 +14,16 @@ const navBar = () => {
 };
 
 export default navBar();
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const navbar = () => {
+  return (
+    <nav>
+      <Link to="/">Brand</Link>
+      <Link to="/item/:id">Item.js</Link>
+      <Link to="/category/:categoryId">Category</Link>
+    </nav>
+  );
+}
 

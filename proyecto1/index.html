@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/App.css">
+  <title>Tu Proyecto React</title>
+
+ 
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="module" src="/path-a-tu-proyecto/node_modules/react/index.js"></script>
+  <script type="module" src="/path-a-tu-proyecto/node_modules/react-dom/index.js"></script>
+  <script type="module" src="/path-a-tu-proyecto/node_modules/vite/dist/index.js"></script>
+
+ 
+  <script type="module" src="/path-a-tu-proyecto/src/App.js"></script>
+
+  
+  <script type="module" src="/path-a-tu-proyecto/node_modules/react-dom@18.2.0/cjs/react-dom.development.js"></script>
+
+  <script>
+    
+    ReactDOM.render(React.createElement(App), document.getElementById('root'));
+  </script>
+</body>
 </html>
